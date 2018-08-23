@@ -1,2 +1,103 @@
-# docker-php
-Dockerfiles to build docker containers to run PHP applications
+# circleci-php
+Dockerfile based on `circleci/php:7.1-fpm-node-browsers` to run tests for PHP applications. 
+
+## Purpose
+This image contains **node**, **AWS CLI**, **ImageMagick** and **Ghostscript**. If your application handles image or PDF files, this might be a starting point to build your own images for testing. 
+
+This is only intended to use for running tests on [CircleCI](https://circleci.com/) or its [CLI](https://github.com/circleci-Public/circleci-cli). Please don't think to use it for any other purposes.
+
+
+## Base Image
+```
+circleci/php:7.1-fpm-node-browsers
+```
+
+## PHP Information
+```php
+# php --version
+PHP 7.1.20 (cli) (built: Jul 21 2018 08:40:41) ( NTS )
+Copyright (c) 1997-2018 The PHP Group
+Zend Engine v3.1.0, Copyright (c) 1998-2018 Zend Technologies
+    with Zend OPcache v7.1.20, Copyright (c) 1999-2018, by Zend Technologies
+    with Xdebug v2.6.1, Copyright (c) 2002-2018, by Derick Rethans
+
+# php -m
+[PHP Modules]
+Core
+ctype
+curl
+date
+dom
+exif
+fileinfo
+filter
+ftp
+gd
+hash
+iconv
+imagick
+intl
+json
+libxml
+mbstring
+mcrypt
+mysqlnd
+openssl
+pcntl
+pcre
+PDO
+pdo_mysql
+pdo_sqlite
+Phar
+posix
+readline
+Reflection
+session
+SimpleXML
+SPL
+sqlite3
+standard
+tokenizer
+xdebug
+xml
+xmlreader
+xmlwriter
+Zend OPcache
+zip
+zlib
+
+[Zend Modules]
+Xdebug
+Zend OPcache
+```
+
+## Application Paths and Versions
+
+### node
+```
+/usr/local/bin/node
+v8.11.4
+```
+
+### Ghostscript
+```
+/usr/bin/gs
+GPL Ghostscript 9.23 (2018-03-21)
+Copyright (C) 2018 Artifex Software, Inc.  All rights reserved.
+```
+
+### ImageMagick
+```
+/usr/bin/convert
+Version: ImageMagick 7.0.8-10 Q16 x86_64 2018-08-23 https://www.imagemagick.org
+Copyright: © 1999-2018 ImageMagick Studio LLC
+License: https://www.imagemagick.org/script/license.php
+Features: Cipher DPC HDRI OpenMP 
+Delegates (built-in): bzlib djvu fontconfig freetype gvc jbig jng jp2 jpeg lcms lqr lzma openexr png tiff wmf x xml zlib
+```
+
+### AWS CLI
+```
+/usr/local/bin/aws
+aws-cli/1.15.84 Python/2.7.13 Linux/4.4.0-133-generic botocore/1.10.83
+```
