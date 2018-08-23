@@ -4,7 +4,7 @@ USER root
 
 # install
 RUN apt-get update && apt-get install -y \
-    libexif-dev libfreetype6-dev libgd-dev libgs-dev libicu-dev libjpeg-dev \
+    acl libexif-dev libfreetype6-dev libgd-dev libgs-dev libicu-dev libjpeg-dev \
     libjpeg62-turbo-dev libmagic-dev libmagickwand-dev libmcrypt-dev libmcrypt4 \
     libpng++-dev libvpx-dev openssh-client openssl mysql-client python-pip groff-base wget
 
