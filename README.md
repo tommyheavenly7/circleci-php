@@ -15,10 +15,10 @@ circleci/php:7.1-fpm-node-browsers
 ## PHP Information
 ```php
 # php --version
-PHP 7.1.20 (cli) (built: Jul 21 2018 08:40:41) ( NTS )
+PHP 7.1.26 (cli) (built: Jan 22 2019 23:03:24) ( NTS )
 Copyright (c) 1997-2018 The PHP Group
 Zend Engine v3.1.0, Copyright (c) 1998-2018 Zend Technologies
-    with Zend OPcache v7.1.20, Copyright (c) 1999-2018, by Zend Technologies
+    with Zend OPcache v7.1.26, Copyright (c) 1999-2018, by Zend Technologies
     with Xdebug v2.6.1, Copyright (c) 2002-2018, by Derick Rethans
 
 # php -m
@@ -76,28 +76,28 @@ Zend OPcache
 ### node
 ```
 /usr/local/bin/node
-v8.11.4
+v10.15.1
 ```
 
 ### Ghostscript
 ```
 /usr/bin/gs
-GPL Ghostscript 9.23 (2018-03-21)
+GPL Ghostscript 9.26 (2018-11-20)
 Copyright (C) 2018 Artifex Software, Inc.  All rights reserved.
 ```
 
 ### ImageMagick
 ```
 /usr/bin/convert
-Version: ImageMagick 7.0.8-10 Q16 x86_64 2018-08-23 https://www.imagemagick.org
-Copyright: © 1999-2018 ImageMagick Studio LLC
-License: https://www.imagemagick.org/script/license.php
-Features: Cipher DPC HDRI OpenMP 
+Version: ImageMagick 7.0.8-26 Q16 x86_64 2019-02-07 https://imagemagick.org
+Copyright: © 1999-2019 ImageMagick Studio LLC
+License: https://imagemagick.org/script/license.php
+Features: Cipher DPC HDRI OpenMP
 Delegates (built-in): bzlib djvu fontconfig freetype gvc jbig jng jp2 jpeg lcms lqr lzma openexr png tiff wmf x xml zlib
 ```
 
 ### AWS CLI
 ```
 /usr/local/bin/aws
-aws-cli/1.15.84 Python/2.7.13 Linux/4.4.0-133-generic botocore/1.10.83
+aws-cli/1.16.99 Python/2.7.13 Linux/4.9.125-linuxkit botocore/1.12.89
 ```
