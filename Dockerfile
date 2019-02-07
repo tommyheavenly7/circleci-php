@@ -11,9 +11,9 @@ RUN apt-get update && apt-get install -y \
 # PHP extensions
 ## ghostscript release versions: https://github.com/ArtifexSoftware/ghostpdl-downloads/releases
 RUN cd /tmp \
-    && wget https://github.com/ArtifexSoftware/ghostpdl-downloads/releases/download/gs923/ghostpdl-9.23.tar.gz \
-    && tar xzvf ghostpdl-9.23.tar.gz \
-    && cd ghostpdl-9.23 \
+    && wget https://github.com/ArtifexSoftware/ghostpdl-downloads/releases/download/gs926/ghostpdl-9.26.tar.gz \
+    && tar xzvf ghostpdl-9.26.tar.gz \
+    && cd ghostpdl-9.26 \
     && ./configure --disable-compile-inits --with-drivers=ALL --without-luratech --with-libiconv=gnu --prefix=/usr \
     && make \
     && make install
